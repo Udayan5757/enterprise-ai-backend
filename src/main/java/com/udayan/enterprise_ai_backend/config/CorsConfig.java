@@ -18,9 +18,11 @@ public class CorsConfig {
 
                 registry.addMapping("/api/**")
                         .allowedOrigins(
-                                "http://localhost:5173",
-                                "http://localhost:3000",
-                                "http://127.0.0.1:5173"
+                                "http://127.0.0.1:5173",
+                                "https://enterprise-ai.xyz",
+                                "https://www.enterprise-ai.xyz",
+                                "http://localhost:*",
+                                "https://*.enterprise-ai.xyz"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");

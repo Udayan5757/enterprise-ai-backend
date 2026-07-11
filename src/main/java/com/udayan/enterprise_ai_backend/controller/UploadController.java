@@ -27,6 +27,5 @@ public class UploadController {
     ) throws IOException {
 
         return uploadService.upload(file);
-
     }
 }
